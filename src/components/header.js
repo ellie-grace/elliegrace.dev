@@ -5,8 +5,12 @@ import { Link } from 'gatsby'
 const Header = () => (
   <header className="header">
     <div className="container">
-      <nav className="nav">
+    
 
+      <nav className="nav">
+      <div className="logo">
+        <Link to="/">Logo</Link>
+    </div>
         <ul className="header__list-links">
           <li>
             <Link to="/about/">About me</Link>
@@ -18,6 +22,9 @@ const Header = () => (
 
           <li>
             <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/contact/">Contact</Link>
           </li>
         </ul>
 

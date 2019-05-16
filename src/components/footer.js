@@ -5,21 +5,7 @@ import { Link } from 'gatsby'
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <ul className="footer__list-links">
-        <li>
-          <Link to="/about-me/">About me</Link>
-        </li>
-
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-      </ul>
-
-      <ul className="footer__list-social">
+    <ul className="footer__list-social">
         <li>
           <a href="/" rel="noopener noreferrer" target="_blank">
             <span className="fab fa-facebook-f" />
@@ -38,12 +24,25 @@ const Footer = () => (
           </a>
         </li>
 
+      
+      </ul>
+
+
+      <ul className="footer__list-links">
         <li>
-          <a href="/" rel="noopener noreferrer" target="_blank">
-            <span className="fab fa-linkedin" />
-          </a>
+          <Link to="/">Cookie Stuff</Link>
+        </li>
+
+        <li>
+          <Link to="/">Copyright</Link>
+        </li>
+
+        <li>
+          <Link to="/">Contact</Link>
         </li>
       </ul>
+
+     
     </div>
   </footer>
 )

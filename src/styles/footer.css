@@ -3,7 +3,7 @@ footer {
     padding-bottom: 32px;
     width: 100%;
     background: #e74c3c;
-    position: absolute;
+    position: relative;
     bottom: 0;
   }
   

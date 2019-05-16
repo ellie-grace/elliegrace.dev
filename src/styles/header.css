@@ -12,14 +12,22 @@ header {
   .nav {
     align-items: center;
     justify-content: space-between;
+    max-width: 1366px;
+    align-self: center;
+    margin: auto;
+    height: 100px;
   }
   
   .header ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    align-self: center;
   }
   
+  .header ul li {
+      margin-bottom: 0;
+  }
   .header__list-social {
     align-items: center;
   }
@@ -32,10 +40,11 @@ header {
     display: block;
     text-decoration: none;
     color: #fff;
+    margin: auto 14px;
   }
   
   .header__list-links a {
-    padding: 18px 14px;
+    padding: auto 14px;
     transition: background-color .25s ease-in-out;
   }
   
