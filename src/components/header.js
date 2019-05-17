@@ -9,7 +9,7 @@ const Header = () => (
 
       <nav className="nav">
       <div className="logo">
-        <Link to="/">Logo</Link>
+        <Link to="/">ellie grace</Link>
     </div>
         <ul className="header__list-links">
           <li>

@@ -67,3 +67,8 @@ header {
   .header__list-social .fa-facebook-f {
     font-size: 18px;
   }
+
+  .logo {
+    font-family: "Parisienne";
+    font-size: 40px;
+  }
