@@ -39,6 +39,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -60,6 +61,13 @@ module.exports = {
           `gatsby-remark-smartypants`,
         ],
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images/`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

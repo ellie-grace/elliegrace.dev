@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from "../components/header"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default () => (
-  <div style={{ color: `teal` }}>
-    <Link to="/home/">Home</Link>
-    <Header headerText="Contact" />
-    <p>Send us a message!</p>
-  </div>
+  <Layout>
+    <SEO
+          title="Home Page"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        />
+  </Layout>
 )
