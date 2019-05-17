@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background: #333;
+    background: #557a95;
   }
   
   .nav,
@@ -49,7 +49,7 @@ header {
   }
   
   .header__list-links a:hover {
-    background-color: #e74c3c;
+    background-color: var(--bone);
   }
   
   .header__list-social a {
@@ -57,7 +57,7 @@ header {
   }
   
   .header__list-social a:hover {
-    color: #e74c3c;
+    color: var(--bone);
   }
   
   .header__list-social .fab {
@@ -71,4 +71,8 @@ header {
   .logo {
     font-family: "Parisienne";
     font-size: 40px;
+    
+  }
+  .logo a {
+    color: var(--bone);
   }

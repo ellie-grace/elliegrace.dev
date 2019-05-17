@@ -24,6 +24,10 @@ module.exports = {
             family: `Parisienne`
             
           },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
         
         ],
       },
