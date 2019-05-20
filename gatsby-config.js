@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     title: `Ellie Grace - Web Dev`,
@@ -65,9 +66,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `img`,
-        path: `${__dirname}/src/images/`
-      }
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
