@@ -3,7 +3,7 @@ import {Link, graphql} from 'gatsby'
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import BackgroundImage from 'gatsby-background-image'
 
 const IndexPage = (props) => (
   <Layout>
@@ -21,9 +21,20 @@ const IndexPage = (props) => (
     
 
   </div>
-  <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+  {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
 <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
 <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+
+<BackgroundImage 
+                            Tag="section"
+                           fluid={props.data.imageOne.childImageSharp.fluid}
+                           backgroundColor={`#040e18`}
+                           style={{height: `100vh`, display: `flex`, justifyContent: `center`, alignItems: `center`}}
+          >
+            <h1 style={{color: `white`}}>Hello gatsby-background-image</h1>
+          </BackgroundImage>
+       )
+
   </Layout>
 )
 
@@ -33,11 +44,12 @@ export const pageQuery = graphql`
 query {
   imageOne: file(relativePath: { eq: "one.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
+      fluid(quality: 90, maxWidth: 4160) {
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   }
+
   imageTwo: file(relativePath: { eq: "two.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 1000) {
