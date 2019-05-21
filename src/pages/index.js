@@ -22,45 +22,14 @@ const IndexPage = (props) => (
             </div>
             <div className="linebreak"></div>
         <div className="about" style={{maxWidth: `1366px`, display: `flex`, flexDirection: `column`, alignItems: `center`, margin: `auto`}}>
-            <p style={{maxWidth: `800px`, margin: `10vh auto 50px auto`}}>I am a 20-something self taught web developer navigating the fun and frustrating world of working as a Freelance Frontend Developer. British born and currently residing in Malta.
+            <p style={{maxWidth: `800px`, margin: `10vh auto 50px auto`}}>I am a 20-something self taught web developer navigating the fun and frustrating world of working as a Freelance Frontend Developer. British born and currently residing in <Link to="/" style={{textDecoration: `underline`}}>Malta</Link>. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
             </p><p style={{maxWidth: `800px`, margin: `auto auto 10vh auto`}}>
              And approximately two years ago with a MEng Degree, I had absolutely no freaking clue what I wanted out of life. I was bouncing around from country to country, from poorly paid hospitality job to unsatisfying hospitality job, I had enough. I signed up to CodeAcademy, and thus started the journey from absolute coding noob to a "professional" web dev, with actual paying clients, and the lifestyle I used to dream of. </p>
-
-
-            <div className="about-segment" style={{display: `flex`, justifyContent: `center`}}>
-            <Img fluid={props.data.imageRemote.childImageSharp.fluid} style={{ width: `400px`, alignSelf: `center`}} />
-            <div className="about-text" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`}}>
-                <h6>Developer</h6>
-                <p>fghfgh</p>
-            </div>
-            </div>
-
-<div className="about-segment" style={{display: `flex`, justifyContent: `center`}}>
-            <div className="about-text" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`}}>
-                <h6>Traveller</h6>
-                <p>fghfgh</p>
-            </div>
-            <Img fluid={props.data.imageTraveller.childImageSharp.fluid} style={{ width: `400px`, alignSelf: `center`}} />
-
-            </div>
-
-            <div className="about-segment" style={{display: `flex`, justifyContent: `center`}}>
-            <Img fluid={props.data.imageYoga.childImageSharp.fluid} style={{ width: `400px`, alignSelf: `center`}} />
-            <div className="about-text" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`}}>
-                <h6>Developer</h6>
-                <p>fghfgh</p>
-            </div>
-            </div>
-
-<div className="about-segment" style={{display: `flex`, justifyContent: `center`}}>
-            <div className="about-text" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`}}>
-                <h6>Traveller</h6>
-                <p>fghfgh</p>
-            </div>
-            <Img fluid={props.data.imageCountryside.childImageSharp.fluid} style={{ width: `400px`, alignSelf: `center`}} />
-
-            </div>
+          
         </div>
+
+        <div className="linebreak"></div>
+
 
         </main>
         
@@ -129,31 +98,7 @@ query {
       }
     }
   }
-  imageYoga: file(relativePath: { eq: "yoga.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }imageCountryside: file(relativePath: { eq: "countryside.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }imageRemote: file(relativePath: { eq: "remote.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }imageTraveller: file(relativePath: { eq: "travellers.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
+
  
 }
 `

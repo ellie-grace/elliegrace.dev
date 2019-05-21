@@ -27,3 +27,18 @@ h1, h2, h3 , h4, h5, h6, p {
     height: 2px;
     background-color: var(--bone);
 }
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   width: auto;
+   max-width: 400px;
+    
+}
+
+.about-segment {
+    display: flex;
+    justify-content: center;
+    margin: 5vh auto;
+}
