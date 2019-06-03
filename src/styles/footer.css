@@ -44,5 +44,5 @@ footer {
   }
   
   .footer a:hover {
-    color: #c0392b;
+    color: var(--ebony);
   }
